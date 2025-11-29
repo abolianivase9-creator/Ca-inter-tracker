@@ -1,0 +1,29 @@
+{
+  "meta": {
+    "source": "Vivitsu placeholders — replace items with actual QIDs or short names",
+    "updated": "2025-11-30"
+  },
+  "days": {
+    "1": {
+      "topic": "Costing: Marginal Costing",
+      "vivitsu": [
+        "Margin of safety explanation (PYP Jul'21) - Q1 short answer",
+        "Short numerical: compute break-even with semi-variable costs (example)"
+      ]
+    },
+    "2": {
+      "topic": "Costing: Standard Costing",
+      "vivitsu": [
+        "Variance analysis - material and labour (standard costing common Q)",
+        "Short question: compute labour variance (repeated)"
+      ]
+    },
+    "3": {
+      "topic": "Costing: Process Costing",
+      "vivitsu": [
+        "Equivalent units and abnormal loss problems (common)"
+      ]
+    },
+    "...": {}
+  }
+}
