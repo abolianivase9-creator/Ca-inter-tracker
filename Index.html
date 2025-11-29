@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CA Inter Group 2 — 30 Day Tracker</title>
+  <link rel="manifest" href="manifest.json" />
+  <meta name="theme-color" content="#2563eb"/>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <h1>CA Inter Group 2 — 30 Day Tracker</h1>
+    <button id="installBtn" class="install-btn" hidden>Install</button>
+  </header>
+
+  <main class="container">
+    <nav class="weeks" id="weeksNav"></nav>
+    <section id="tasks" class="tasks"></section>
+  </main>
+
+  <footer class="footer">
+    <div id="globalProgress">Progress: 0%</div>
+  </footer>
+
+  <script src="main.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js').catch(function(err){console.log('SW register failed',err)});
+    }
+  </script>
+</body>
+</html>
