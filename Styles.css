@@ -1,0 +1,38 @@
+:root{
+  --green:#dcfce7;
+  --green-border:#86efac;
+  --yellow:#fef3c7;
+  --yellow-border:#fde68a;
+  --red:#fee2e2;
+  --red-border:#fca5a5;
+  --card-bg:#ffffff;
+  --accent:#2563eb;
+  --muted:#6b7280;
+}
+*{box-sizing:border-box;font-family:Inter,ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial;}
+body{margin:0;background:#f3f4f6;color:#111827;min-height:100vh;display:flex;flex-direction:column;}
+.topbar{background:var(--accent);color:white;padding:14px 16px;display:flex;justify-content:space-between;align-items:center;}
+.topbar h1{font-size:16px;margin:0;}
+.install-btn{background:rgba(255,255,255,0.2);border:1px solid rgba(255,255,255,0.2);color:white;padding:8px;border-radius:8px;cursor:pointer;}
+.container{display:flex;gap:16px;padding:16px;flex:1;}
+.weeks{width:160px;display:flex;flex-direction:column;gap:8px;}
+.week-btn{padding:10px;border-radius:8px;background:#fff;border:1px solid #e5e7eb;cursor:pointer;text-align:left;}
+.week-btn.active{border-color:var(--accent);box-shadow:0 2px 6px rgba(37,99,235,0.12);}
+.tasks{flex:1;display:flex;flex-direction:column;gap:12px;overflow:auto;padding-right:8px;}
+.card{display:flex;flex-direction:column;border-radius:12px;padding:12px;border:1px solid #e5e7eb;background:var(--card-bg);}
+.card-head{display:flex;justify-content:space-between;align-items:center;gap:12px;}
+.card .title{font-weight:600;}
+.checkbox{width:28px;height:28px;border-radius:8px;border:2px solid #cbd5e1;display:flex;align-items:center;justify-content:center;font-size:16px;cursor:pointer;background:white;}
+.progress-wrap{height:10px;background:#e6edf9;border-radius:8px;margin-top:10px;overflow:hidden;}
+.progress{height:100%;width:0%;background:linear-gradient(90deg,#34d399,#60a5fa);transition:width 300ms ease;}
+.card.yellow{background:var(--yellow);border-color:var(--yellow-border);}
+.card.green{background:var(--green);border-color:var(--green-border);}
+.card.red{background:var(--red);border-color:var(--red-border);}
+.meta{font-size:13px;color:var(--muted);margin-top:6px;}
+.footer{padding:10px 16px;background:#fff;border-top:1px solid #e5e7eb;}
+.small{font-size:13px;color:var(--muted);}
+@media(max-width:800px){
+  .container{flex-direction:column;padding:12px}
+  .weeks{width:100%;flex-direction:row;overflow:auto}
+  .week-btn{flex:0 0 auto}
+           }
